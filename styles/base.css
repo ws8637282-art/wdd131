@@ -1,1 +1,139 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #222;
+    background-color: #f4f7f9;
+}
+
+header {
+    background-color: #17324d;
+    color: white;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    padding: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #254f70;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background-color: #f2c14e;
+    color: #17324d;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #17324d;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.card h2 {
+    margin: 0;
+    padding: 1rem;
+    background-color: #17324d;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.card h3 {
+    color: #17324d;
+    border-bottom: 2px solid #f2c14e;
+    padding-bottom: 0.4rem;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.about-content img {
+    width: 100%;
+    height: auto;
+}
+
+.resources {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 2rem;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.resources img {
+    width: 100%;
+    height: auto;
+}
+
+.resources a {
+    color: #17324d;
+}
+
+.resources a:hover {
+    color: #b05a00;
+}
+
+footer {
+    background-color: #17324d;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    .about-content,
+    .resources {
+        grid-template-columns: 1fr;
+    }
+}
