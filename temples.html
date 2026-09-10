@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="A responsive Temple Album page featuring temples from around the world.">
+    <meta name="description" content="A temple album featuring beautiful temples from around the world.">
     <meta name="author" content="Whitney Carleen Snyder">
 
-    <title>Temple Album | Whitney Carleen Snyder</title>
+    <title>Temple Album | WDD 131</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
 
+    <!-- JavaScript -->
     <script src="scripts/temples.js" defer></script>
 </head>
 
@@ -23,81 +26,87 @@
 
     <header>
         <div class="header-content">
+
             <h2>Temple Album</h2>
 
-            <button id="menu" aria-label="Open navigation menu">
+            <button id="menu-button" aria-label="Open navigation menu">
                 ☰
             </button>
 
-            <nav>
+            <nav id="navigation">
                 <a href="temples.html">Home</a>
-                <a href="#old">Old</a>
-                <a href="#new">New</a>
-                <a href="#large">Large</a>
-                <a href="#small">Small</a>
+                <a href="#">Old</a>
+                <a href="#">New</a>
+                <a href="#">Large</a>
+                <a href="#">Small</a>
             </nav>
+
         </div>
     </header>
 
     <main>
+
         <h1>Temple Album</h1>
 
-        <div class="temple-grid">
+        <section class="temple-grid">
 
             <figure>
-                <img src="images/temple1.jpg" alt="Temple building">
+                <img src="images/temple1.jpg" alt="Salt Lake Temple" loading="lazy">
                 <figcaption>Salt Lake Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/temple2.jpg" alt="Temple building">
+                <img src="images/temple2.jpg" alt="Laie Hawaii Temple" loading="lazy">
                 <figcaption>Laie Hawaii Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/temple3.jpg" alt="Temple building">
+                <img src="images/temple3.jpg" alt="Apia Samoa Temple" loading="lazy">
                 <figcaption>Apia Samoa Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/temple4.jpg" alt="Temple building">
-                <figcaption>Provo City Center Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/temple5.jpg" alt="Temple building">
-                <figcaption>Brisbane Australia Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/temple6.jpg" alt="Temple building">
+                <img src="images/temple4.jpg" alt="Hamilton New Zealand Temple" loading="lazy">
                 <figcaption>Hamilton New Zealand Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/temple7.jpg" alt="Temple building">
+                <img src="images/temple5.jpg" alt="Brisbane Australia Temple" loading="lazy">
+                <figcaption>Brisbane Australia Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple6.jpg" alt="Suva Fiji Temple" loading="lazy">
+                <figcaption>Suva Fiji Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple7.jpg" alt="Provo City Center Temple" loading="lazy">
+                <figcaption>Provo City Center Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple8.jpg" alt="Manila Philippines Temple" loading="lazy">
                 <figcaption>Manila Philippines Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/temple8.jpg" alt="Temple building">
-                <figcaption>Fiji Suva Temple</figcaption>
+                <img src="images/temple9.jpg" alt="Port Vila Vanuatu Temple" loading="lazy">
+                <figcaption>Port Vila Vanuatu Temple</figcaption>
             </figure>
 
-            <figure>
-                <img src="images/temple9.jpg" alt="Temple building">
-                <figcaption>Pago Pago American Samoa Temple</figcaption>
-            </figure>
+        </section>
 
-        </div>
     </main>
 
     <footer>
+
         <p>
             &copy; <span id="currentyear"></span> Whitney Carleen Snyder | Samoa
         </p>
 
         <p id="lastModified"></p>
+
     </footer>
 
 </body>
