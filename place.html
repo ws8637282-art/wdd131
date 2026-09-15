@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Samoa | WDD 131 - Dynamic Web Fundamentals</title>
+    <meta name="description" content="Learn about Samoa, its beautiful landscapes, weather, and natural environment.">
+    <meta name="author" content="Whitney Carleen Snyder">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Samoa</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 700px)" srcset="images/samoa-hero-large.webp">
+                <img src="images/samoa-hero.webp"
+                     alt="Beautiful tropical landscape in Samoa"
+                     width="800"
+                     height="500">
+            </picture>
+        </section>
+
+        <section class="info">
+            <div class="data">
+                <h2>Data</h2>
+
+                <p><strong>Area:</strong> 2,842 sq km</p>
+                <p><strong>Population:</strong> About 200,000</p>
+                <p><strong>Capital:</strong> Apia</p>
+                <p><strong>Languages:</strong> Samoan, English</p>
+                <p><strong>Currency:</strong> Samoan Tala</p>
+                <p><strong>Time Zone:</strong> UTC +13</p>
+                <p><strong>Calling Code:</strong> +685</p>
+                <p><strong>Internet TLD:</strong> .ws</p>
+            </div>
+
+            <div class="weather">
+                <h2>Weather</h2>
+
+                <div class="weather-icon">
+                    <span>⛅</span>
+                </div>
+
+                <p><strong>Temperature:</strong> 29 °C</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> 12 km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> 🌴 Samoa | Whitney Carleen Snyder
+        </p>
+        <p>
+            Last Modification: <span id="lastModified"></span>
+        </p>
+    </footer>
+
+</body>
+</html>
