@@ -4,47 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Filtered Temples</title>
+    <meta name="description" content="A responsive temple album featuring temples from around the world.">
+    <meta name="author" content="Whitney Carleen Snyder">
 
-    <meta
-        name="description"
-        content="A filtered temple album displaying temples from around the world."
-    >
+    <title>Temple Album | WDD 131</title>
 
-    <link rel="stylesheet" href="styles/filtered-temples.css">
-    <script src="scripts/filtered-temples.js" defer></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/temples.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <h1>Temple Album</h1>
+        <div class="header-content">
 
-        <button id="menu" aria-label="Open navigation menu">☰</button>
+            <h2>Temple Album</h2>
 
-        <nav>
-            <a href="#" id="home">Home</a>
-            <a href="#" id="old">Old</a>
-            <a href="#" id="new">New</a>
-            <a href="#" id="large">Large</a>
-            <a href="#" id="small">Small</a>
-        </nav>
+            <button id="menu-button" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <nav id="navigation">
+                <a href="temples.html">Home</a>
+                <a href="#">Old</a>
+                <a href="#">New</a>
+                <a href="#">Large</a>
+                <a href="#">Small</a>
+            </nav>
+
+        </div>
     </header>
 
     <main>
-        <h2>Temples</h2>
 
-        <section id="temple-container" class="temple-grid">
-            <!-- Temple cards will be created by JavaScript -->
+        <h1>Temple Album</h1>
+
+        <section class="temple-grid">
+
+            <figure>
+                <img src="images/temple1.webp" alt="Salt Lake Temple" loading="lazy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple2.webp" alt="Laie Hawaii Temple" loading="lazy">
+                <figcaption>Laie Hawaii Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple3.webp" alt="Apia Samoa Temple" loading="lazy">
+                <figcaption>Apia Samoa Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple4.webp" alt="Hamilton New Zealand Temple" loading="lazy">
+                <figcaption>Hamilton New Zealand Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple5.webp" alt="Brisbane Australia Temple" loading="lazy">
+                <figcaption>Brisbane Australia Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple6.webp" alt="Suva Fiji Temple" loading="lazy">
+                <figcaption>Suva Fiji Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple7.webp" alt="Provo City Center Temple" loading="lazy">
+                <figcaption>Provo City Center Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple8.webp" alt="Manila Philippines Temple" loading="lazy">
+                <figcaption>Manila Philippines Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple9.webp" alt="Port Vila Vanuatu Temple" loading="lazy">
+                <figcaption>Port Vila Vanuatu Temple</figcaption>
+            </figure>
+
         </section>
+
     </main>
 
     <footer>
+
         <p>
             &copy; <span id="currentyear"></span> Whitney Carleen Snyder | Samoa
         </p>
 
         <p id="lastModified"></p>
+
     </footer>
 
 </body>
