@@ -1,23 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    background-color: rgb(245, 245, 245);
+    color: rgb(34, 34, 34);
+}
+
+header {
+    background-color: rgb(0, 48, 73);
+    color: white;
+    padding: 1rem;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0 0 1rem;
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 48, 73);
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main > h2 {
+    text-align: center;
+    font-family: "Playfair Display", Georgia, serif;
+    margin-bottom: 1.5rem;
+}
+
 #temple-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    padding: 1rem;
 }
 
 .temple-card {
     background-color: white;
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.15);
 }
 
 .temple-card h2 {
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display", Georgia, serif;
+    margin-top: 0;
+    color: rgb(0, 48, 73);
 }
 
 .temple-card p {
-    font-family: "Montserrat", sans-serif;
+    margin: 0.5rem 0;
+    line-height: 1.5;
 }
 
 .temple-card img {
@@ -25,6 +84,19 @@
     height: auto;
     display: block;
     margin-top: 1rem;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: rgb(0, 48, 73);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem;
 }
 
 @media screen and (min-width: 32rem) {
